@@ -1,0 +1,11 @@
+wizard: FUS RO DOH!
+wizard: .[pause=0.5].[pause=0.5].[pause=0.5]No wait, that's not right. The term 'polymorphism' means 'many forms'! I have multiple spells named castSpell!
+wizard: It is useful when you want to create multiple forms with the same name of a single entity. But one takes a target, and another takes a target AND damage!
+wizard: This is called method overloading, performed in the same class where we have multiple methods with the same name but different parameters.
+if {HasWizardToken} == 0:
+	wizard: You want my autograph? Bah, I do not have time for small tin people.
+	wizard: Here, take this meager handout and begone.
+	[signal arg="coin_received"]
+	set {HasWizardToken} = 1
+	set {TokenCount} += 1
+[end_timeline]

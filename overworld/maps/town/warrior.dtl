@@ -1,0 +1,11 @@
+warrior: You may ask, why am I so popular with the ladies? Why, it's my Abstraction, of course! Abstraction is a technique of hiding internal details and showing functionalities.
+warrior: Is it because I'm super edgy? My angelic appearance? My poor social skills?
+warrior: Why, it's my unfathomably large sword, of course! I hide all the messy internal wiring and only show you the simple buttons you need to press.
+if {HasWarriorToken} == 0:
+	warrior: Of course you would want [i]my[/i] autograph!
+	warrior: Here's the awkward part, I can't write. Really. I am an Abstract Class. That means I am a restricted class that cannot be used to create objects. I have abstract methods that don't have a body to do the work. I have to be inherited from another class to provide the body!
+	warrior: Have this coin instead. If you squint real hard, you can pretend it has my face on it! Aren't I generous?
+	[signal arg="coin_received"]
+	set {HasWarriorToken} = 1
+	set {TokenCount} += 1
+[end_timeline]

@@ -1,0 +1,10 @@
+monk: Me and the fam just got back from slaying another ancient being. Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit.
+monk: Punch 'im? What kind of monster do I look like? We keep our data safe by hiding it—it is also known as data hiding! We declare the variables of a class as private.
+monk: We got 'im with the power of friendship!
+if {HasMonkToken} == 0:
+	monk: An autograph? I'm sorry, but I can't unclench my mighty fists. You must use my public Getter method to ask for my signature nicely instead! The get method returns the variable value, and the set method sets the value.
+	monk: Here. Have one of these instead. May your little robot arms be strong.
+	[signal arg="coin_received"]
+	set {HasMonkToken} = 1
+	set {TokenCount} += 1
+[end_timeline]
